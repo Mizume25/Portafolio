@@ -1,0 +1,268 @@
+* {
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ─── VARIABLES ──────────────────────────────────────────────── */
+:root {
+    --bg-header: linear-gradient(to right, #c7d2fe 0%, #e0e7ff 40%, #f0f4ff 100%);
+    --border-header: rgba(0, 0, 0, 0.06);
+    --color-name: #111;
+    --color-role: #888;
+    --color-company: #555;
+    --color-text: #555;
+    --bg-card: linear-gradient(135deg, #6366f1, #818cf8);
+    --color-card-text: #fff;
+    --bg-underline: linear-gradient(135deg, #6366f1, #818cf8);
+    --color-dot: #22c55e;
+}
+
+body.dark {
+    --bg-header: linear-gradient(to right, #1e1b4b 0%, #312e81 40%, #0f172a 100%);
+    --border-header: rgba(255, 255, 255, 0.06);
+    --color-name: #f0f4ff;
+    --color-role: #a5b4fc;
+    --color-company: #c7d2fe;
+    --color-text: #a5b4fc;
+    --bg-card: linear-gradient(135deg, #4338ca, #6366f1);
+    --color-card-text: #fff;
+    --bg-underline: linear-gradient(135deg, #818cf8, #a5b4fc);
+    --color-dot: #4ade80;
+}
+
+/* ─── HEADER ─────────────────────────────────────────────────── */
+.header {
+    width: 100%;
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--border-header);
+    animation: fadeIn 1.2s ease-in-out both;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    height: 400px;
+    width: 100%;
+    padding-left: 12rem;
+}
+
+/* ─── AVATAR ─────────────────────────────────────────────────── */
+.nav-avatar {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav-avatar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.25);
+}
+
+.nav-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+/* ─── INFO ───────────────────────────────────────────────────── */
+.nav-info {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+.nav-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-name);
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-name::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--bg-underline);
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-name:hover::after {
+    width: 75%;
+}
+
+.nav-role {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--color-role);
+    margin: 0;
+    margin-top: 2px;
+}
+
+/* ─── EMPRESAS ───────────────────────────────────────────────── */
+.nav-companies {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.nav-company {
+    font-weight: 400;
+    color: var(--color-company);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.nav-company a {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.nav-company a:hover {
+    transform: translateX(6px);
+}
+
+.nav-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-dot);
+    flex-shrink: 0;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ─── CARD ───────────────────────────────────────────────────── */
+.nav-card {
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--bg-card);
+    border-radius: 12px;
+    display: inline-block;
+    align-self: flex-start;
+    animation: fadeInBottom 2.1s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-details li {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color-card-text);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-details li:hover {
+    transform: translateX(6px);
+}
+
+.nav-details li + li {
+    margin-top: 12px;
+}
+
+/* ─── SOBRE MÍ ───────────────────────────────────────────────── */
+.nav-about {
+    align-self: center;
+    margin-left: auto;
+    margin-right: 4rem;
+    max-width: 340px;
+}
+
+.nav-about-text {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--color-text);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.dark-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: var(--bg-card);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.dark-toggle:hover {
+    transform: scale(1.1) rotate(20deg);
+    opacity: 0.9;
+    background: var(--bg-card);
+}
+
+.dark-toggle i {
+    transition: opacity 0.9s ease-in-out;
+}
+
+.dark-toggle i.fade {
+    opacity: 0.5;
+}
+
+
+
+/* ─── ANIMACIONES ────────────────────────────────────────────── */
+.nav-avatar, .nav-name, .nav-role, .nav-companies > h2 {
+    animation: fadeInLeft 2.1s ease-in-out both;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.5; transform: scale(0.85); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInBottom {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
