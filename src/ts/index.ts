@@ -131,6 +131,7 @@ function renderProjectDots(): void {
         if (i === currentProject) dot.classList.add('active');
         dot.addEventListener('click', () => goToProject(i));
         item.projectDots.appendChild(dot);
+        
     });
 }
 
@@ -152,6 +153,7 @@ function goToImg(index: number): void {
     item.projectImg.classList.add('fade');
     setTimeout(() => {
         item.projectImg.src = project.screenshots[currentImg];
+        item.projectImg.loading = 'lazy';
         item.projectImg.classList.remove('fade');
         renderImgDots();
     }, 600);
@@ -170,6 +172,7 @@ function renderProject(): void {
     const leftElements = [item.projectTitle, item.projectDesc, item.projectStackLogos, item.projectStackTags];
     leftElements.forEach(el => el.classList.add('tech-fade-opacity'));
     item.projectImg.classList.add('fade');
+    item.projectImg.loading = 'lazy';
 
     setTimeout(() => {
         item.projectTitle.textContent = project.name;
