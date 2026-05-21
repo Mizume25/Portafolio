@@ -230,6 +230,7 @@ a {
     flex-direction: row;
     gap: 0.5rem;
     z-index: 999;
+    
 }
 
 .section-nav__link {
@@ -548,7 +549,7 @@ img {
 /* ════════════════════════════════════════════════════════
    ANIMACIONES
 ════════════════════════════════════════════════════════ */
-.nav-avatar, .nav-name, .nav-role, .nav-companies > h2, .dark-toggle {
+.nav-avatar, .nav-name, .nav-role, .nav-companies > h2, .dark-toggle , .section-nav {
     animation: fadeInLeft 2.1s ease-in-out both;
 }
 
