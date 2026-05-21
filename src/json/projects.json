@@ -19,10 +19,10 @@
             "tailwind-css.png"
         ],
         "screenshots": [
-            "assets/screen/SPA/Pagina1.png",
-            "assets/screen/SPA/Pagina2.png",
-            "assets/screen/SPA/Pagina3.png",
-            "assets/screen/SPA/Pagina4..png"
+            "assets/screen/SPA/Pagina1.webp",
+            "assets/screen/SPA/Pagina2.webp",
+            "assets/screen/SPA/Pagina3.webp",
+            "assets/screen/SPA/Pagina4_.webp"
         ]
     },
     {
@@ -39,8 +39,8 @@
             "TypeScript-logo.png"
         ],
         "screenshots": [
-            "assets/screen/next/Pagina1.png",
-            "assets/screen/next/Pagina2.png"
+            "assets/screen/next/Pagina1.webp",
+            "assets/screen/next/Pagina2.webp"
         ]
     },
     {
@@ -61,9 +61,9 @@
             "php_logo.png"
         ],
         "screenshots": [
-            "assets/screen/Blog/Pagina1.png",
-            "assets/screen/Blog/Pagina2.png",
-            "assets/screen/Blog/Pagina3.jpeg"
+            "assets/screen/Blog/Pagina1.webp",
+            "assets/screen/Blog/Pagina2.webp",
+            "assets/screen/Blog/Pagina3.webp"
         ]
     },
     {
@@ -79,8 +79,8 @@
             "js-logo.png"
         ],
         "screenshots": [
-            "assets/screen/Api/Pagina1.png",
-            "assets/screen/Api/Pagina2.png"
+            "assets/screen/Api/Pagina1.webp",
+            "assets/screen/Api/Pagina2.webp"
         ]
     }
 ]
