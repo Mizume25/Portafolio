@@ -212,3 +212,15 @@ fetch('src/json/experience.json')
     observer.observe(container);
 })
     .catch(err => console.error('Error cargando timeline.json:', err));
+const projectsSection = document.querySelector('.projects-section');
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startImgAutoplay();
+        }
+        else {
+            stopImgAutoplay();
+        }
+    });
+}, { threshold: 0.3 });
+sectionObserver.observe(projectsSection);
