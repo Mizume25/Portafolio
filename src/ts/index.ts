@@ -95,7 +95,7 @@ function render(): void {
         elements.forEach(el => el.classList.remove('tech-fade'));
         renderDots();
 
-    }, 5000);
+    }, 200);
 }
 
 item.techPrev.addEventListener('click', () => goTo(current - 1));
@@ -215,7 +215,7 @@ function renderProject(): void {
         renderProjectDots();
         renderImgDots();
         startImgAutoplay();
-    }, 5000);
+    }, 200);
 }
 
 item.projectPrev.addEventListener('click', () => goToProject(currentProject - 1));

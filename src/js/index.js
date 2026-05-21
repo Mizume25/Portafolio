@@ -61,7 +61,7 @@ function render() {
         item.techFeatures.innerHTML = tech.features.map(f => `<li>${f}</li>`).join('');
         elements.forEach(el => el.classList.remove('tech-fade'));
         renderDots();
-    }, 5000);
+    }, 200);
 }
 item.techPrev.addEventListener('click', () => goTo(current - 1));
 item.techNext.addEventListener('click', () => goTo(current + 1));
@@ -149,7 +149,7 @@ function renderProject() {
         renderProjectDots();
         renderImgDots();
         startImgAutoplay();
-    }, 5000);
+    }, 200);
 }
 item.projectPrev.addEventListener('click', () => goToProject(currentProject - 1));
 item.projectNext.addEventListener('click', () => goToProject(currentProject + 1));
