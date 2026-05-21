@@ -25,7 +25,9 @@
     <button class="dark-toggle" id="darkToggle">
         <i class="fa-solid fa-moon"></i>
     </button>
+    <!-- Presentacion-->
     <header class="header">
+
         <div class="container">
             <div class="nav">
 
@@ -50,10 +52,15 @@
                         <ul class="nav-details">
                             <li><i class="fa-solid fa-cake-candles"></i> 21 de mayo de 2005</li>
                             <li><i class="fa-solid fa-location-dot"></i> L'Hospitalet de l'Infant, Tarragona</li>
-                            <li><i class="fa-solid fa-at"></i> gabrielnivicela649@gmail.com</li>
+                            <li><i class="fa-brands fa-github"></i><a href="https://github.com/Mizume25"> Mizume25</a>
+                            </li>
+                            <li><i class="fa-brands fa-linkedin-in"></i> <a
+                                    href="https://www.linkedin.com/in/gabriel-nivicela-86733035a/">G. Nivicela</a></li>
                         </ul>
                     </div>
-
+                    <p class="nav-bio">
+                        Developer web Full Stack con formación en DAW. Me considero una persona versatil en cuanto a dinamicas de trabajo se refiere.
+                    </p>
 
 
                 </div>
@@ -63,58 +70,101 @@
                     <img src="assets/img/html-logo.png" alt="HTML" class="logo-float" width="120px" height="120px">
                     <img src="assets/img/js-logo.png" alt="JavaScript" class="logo-float" width="80px" height="80px">
                     <img src="assets/img/laravel-logo.png" alt="Laravel" class="logo-float" width="80px" height="80px">
-                    <img src="assets/img/MariaDB-dark-logo.png" alt="MariaDB" class="logo-float" width="80px" height="80px">
+                    <img src="assets/img/MariaDB-dark-logo.png" alt="MariaDB" class="logo-float" width="80px"
+                        height="80px">
                     <img src="assets/img/php_logo.png" alt="PHP" class="logo-float" width="90px" height="90px">
                     <img src="assets/img/React-logo.png" alt="React" class="logo-float" width="80px" height="80px">
-                    <img src="assets/img/TypeScript-logo.png" alt="TypeScript" class="logo-float" width="80px" height="80px">
+                    <img src="assets/img/TypeScript-logo.png" alt="TypeScript" class="logo-float" width="80px"
+                        height="80px">
                     <img src="assets/img/next-light.png" alt="Next.js" class="logo-float" width="80px" height="80px">
                     <img src="assets/img/oracle-bd.png" alt="OracleBD" class="logo-float" width="90px" height="90px">
                     <img src="assets/img/java.png" alt="java" class="logo-float" width="90px" height="90px">
                 </div>
             </div>
     </header>
+    <!-- Seccion de Teconologias -->
     <section id="tecnologias" class="tech-section">
         <div class="container">
-
-            <!-- Dots arriba -->
+            <h2 class="section-title">Tecnologías</h2>
             <div class="tech-dots" id="techDots"></div>
-
             <div class="tech-slider">
-
-                <!-- Panel izquierdo -->
                 <div class="tech-left">
                     <button class="tech-arrow tech-arrow--prev" id="techPrev">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
                     <div class="tech-center">
                         <div class="tech-links" id="techLinks"></div>
-
                         <div class="tech-logo-wrap">
                             <img src="" alt="" class="tech-logo" id="techLogo">
                         </div>
                         <h3 class="tech-title" id="techTitle"></h3>
                     </div>
-
                     <button class="tech-arrow tech-arrow--next" id="techNext">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
-
-
-
-                <!-- Panel derecho -->
                 <div class="tech-right">
-
                     <p class="tech-desc" id="techDesc"></p>
                     <div class="tech-certs" id="techCerts"></div>
                     <ul class="tech-features" id="techFeatures"></ul>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion de Proyectos -->
+    <section id="proyectos" class="projects-section">
+        <div class="container">
 
-                
+            <h2 class="section-title">Proyectos</h2>
+
+            <div class="projects-dots" id="projectDots"></div>
+
+            <div class="projects-slider">
+
+                <!-- Panel izquierdo: info -->
+                <div class="project-left">
+                    <div class="project-status-wrap">
+                        <span class="project-status" id="projectStatus"></span>
+                    </div>
+                    <h3 class="project-title" id="projectTitle"></h3>
+                    <p class="project-desc" id="projectDesc"></p>
+                    <div class="project-stack-logos" id="projectStackLogos"></div>
+                    <div class="project-stack-tags" id="projectStackTags"></div>
+                </div>
+
+                <!-- Panel derecho: imágenes -->
+                <div class="project-right">
+                    <button class="project-arrow project-arrow--prev" id="projectPrev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="project-image-wrap">
+                        <img src="" alt="" class="project-img" id="projectImg">
+                        <div class="project-img-dots" id="projectImgDots"></div>
+                    </div>
+                    <button class="project-arrow project-arrow--next" id="projectNext">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
 
             </div>
         </div>
     </section>
+    <!--- Experiencia Laboral y estudios -->
+    <section id="experiencia" class="timeline-section">
+        <div class="container">
+
+            <h2 class="section-title">Experiencia y Trayectoria</h2>
+
+            <div class="timeline-track">
+                <div class="timeline-bar">
+                    <div class="timeline-progress" id="timelineProgress"></div>
+                </div>
+                <div class="timeline-items" id="timelineItems"></div>
+            </div>
+        </div>
+    </section>
+
+
     <script src="src/js/index.js" type="module"></script>
 </body>
 

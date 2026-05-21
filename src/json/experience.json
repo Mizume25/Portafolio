@@ -1,0 +1,44 @@
+[
+    {
+        "type": "formacion",
+        "title": "ESO",
+        "institution": "Institut Berenguer d'Entença",
+        "period": "2016 — 2020"
+    },
+    {
+        "type": "formacion",
+        "title": "CFGM — SMR",
+        "institution": "Institut Baix Camp",
+        "period": "2021 — 2023"
+    },
+    {
+        "type": "experiencia",
+        "title": "Becario — Gestión Informática",
+        "institution": "Escola Rubió i Ors",
+        "period": "Dic. 2022 — Jun. 2023"
+    },
+    {
+        "type": "experiencia",
+        "title": "Ayudante de Cocina",
+        "institution": "Pizzería Rally · Miami Playa",
+        "period": "Jul.–Sep. 2023 y 2024"
+    },
+    {
+        "type": "experiencia",
+        "title": "Cajero / Reponedor",
+        "institution": "Supermercado Spar",
+        "period": "May. 2025 — Sep. 2025"
+    },
+    {
+        "type": "formacion",
+        "title": "CFGS — DAW",
+        "institution": "Institut Baix Camp",
+        "period": "2025 — actualidad"
+    },
+    {
+        "type": "experiencia",
+        "title": "Desarrollador Web en Prácticas",
+        "institution": "Studiogenesis · Reus",
+        "period": "Jun. 2026 — actualidad"
+    }
+]

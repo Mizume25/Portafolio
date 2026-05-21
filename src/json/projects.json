@@ -1,0 +1,86 @@
+[
+    {
+        "name": "MizumeBlog",
+        "status": "Activo",
+        "desc": "Plataforma web full-stack de blog personal con arquitectura desacoplada. Laravel como API REST y React con TypeScript como frontend. Implementa autenticación robusta, servicios externos y APIs de terceros.",
+        "stack": [
+            "Laravel 11",
+            "React",
+            "TypeScript",
+            "Inertia.js",
+            "TailwindCSS",
+            "AWS SES",
+            "Google OAuth"
+        ],
+        "stack_logos": [
+            "laravel-logo.png",
+            "React-logo.png",
+            "TypeScript-logo.png",
+            "tailwind-css.png"
+        ],
+        "screenshots": [
+            "assets/screen/SPA/Pagina1.png",
+            "assets/screen/SPA/Pagina2.png",
+            "assets/screen/SPA/Pagina3.png",
+            "assets/screen/SPA/Pagina4..png"
+        ]
+    },
+    {
+        "name": "NextBase",
+        "status": "En desarrollo",
+        "desc": "Exploración activa del stack Next.js con Supabase como backend-as-a-service. SSR, rutas de API y autenticación en la nube.",
+        "stack": [
+            "Next.js",
+            "Supabase",
+            "TypeScript"
+        ],
+        "stack_logos": [
+            "next-light.png",
+            "TypeScript-logo.png"
+        ],
+        "screenshots": [
+            "assets/screen/next/Pagina1.png",
+            "assets/screen/next/Pagina2.png"
+        ]
+    },
+    {
+        "name": "BlogPersonal",
+        "status": "Archivado",
+        "desc": "Primera versión de mi blog personal. HTML, CSS y JavaScript en el frontend con PHP y MySQL en el backend. Responsive nativo con CSS puro.",
+        "stack": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "MySQL"
+        ],
+        "stack_logos": [
+            "html-logo.png",
+            "css-logo.png",
+            "js-logo.png",
+            "php_logo.png"
+        ],
+        "screenshots": [
+            "assets/screen/Blog/Pagina1.png",
+            "assets/screen/Blog/Pagina2.png",
+            "assets/screen/Blog/Pagina3.jpeg"
+        ]
+    },
+    {
+        "name": "API Rick & Morty",
+        "status": "Archivado",
+        "desc": "Primer proyecto con React. Consumo de la API pública de Rick & Morty con renderizado dinámico de personajes.",
+        "stack": [
+            "React",
+            "JavaScript"
+        ],
+        "stack_logos": [
+            "React-logo.png",
+            "js-logo.png"
+        ],
+        "screenshots": [
+            "assets/screen/Api/Pagina1.png",
+            "assets/screen/Api/Pagina2.png"
+        ]
+    }
+]
