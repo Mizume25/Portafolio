@@ -1,0 +1,219 @@
+[
+    {
+        "name": "Laravel",
+        "logo": "assets/img/laravel-logo.png",
+        "links": [
+            {
+                "label": "MizumeBlog",
+                "url": "https://github.com/Mizume25/MizumeBlog"
+            },
+            {
+                "label": "gestoriaV2",
+                "url": "https://github.com/Mizume25/gestoriaV2"
+            }
+        ],
+        "desc": "Framework PHP para el desarrollo de aplicaciones web robustas. Domino migraciones, modelos Eloquent, controladores, middleware, autenticación con Breeze y arquitectura API REST.",
+        "certs": [],
+        "features": [
+            "Autenticación robusta con Laravel Breeze",
+            "API REST desacoplada con React",
+            "Gestión de sesiones y middleware",
+            "Factories, seeders y migraciones"
+        ]
+    },
+    {
+        "name": "React",
+        "logo": "assets/img/React-logo.png",
+        "links": [
+            {
+                "label": "MizumeBlog",
+                "url": "https://github.com/Mizume25/MizumeBlog"
+            },
+            {
+                "label": "react_project",
+                "url": "https://github.com/Mizume25/react_project"
+            }
+        ],
+        "desc": "Librería JavaScript para construir interfaces de usuario. Domino hooks, componentes funcionales, props, renderizado condicional e integración con Inertia.js.",
+        "certs": [
+            {
+                "name": "Fundamentos React",
+                "url": "https://openwebinars.net/cert/bo0Z"
+            }
+        ],
+        "features": [
+            "Renderizado TSX con TypeScript / JavaScript (JSX/TSX)",
+            "Integración con Laravel via Inertia.js",
+            "Componentes reutilizables"
+        ]
+    },
+    {
+        "name": "Next.js",
+        "logo": "assets/img/next-dark.png",
+        "links": [
+            {
+                "label": "NextBase",
+                "url": "https://github.com/Mizume25/NextBase"
+            }
+        ],
+        "desc": "Framework de React para aplicaciones web con renderizado en servidor. Conocimiento esencial de su estructura, enrutamiento y gestión básica entre cliente y servidor.",
+        "certs": [],
+        "features": [
+            "Enrutamiento con App Router",
+            "Componentes cliente y servidor",
+            "Integración con Supabase",
+            "Estructura básica de proyecto Next.js"
+        ]
+    },
+    {
+        "name": "TypeScript",
+        "logo": "assets/img/TypeScript-logo.png",
+        "links": [
+            {
+                "label": "MizumeBlog",
+                "url": "https://github.com/Mizume25/MizumeBlog"
+            },
+            {
+                "label": "NextBase",
+                "url": "https://github.com/Mizume25/NextBase"
+            }
+        ],
+        "desc": "Superset de JavaScript con tipado estático. Aprendizaje autodidacta aplicado directamente en frameworks como React y Next.js.",
+        "certs": [],
+        "features": [
+            "Interfaces y tipos personalizados",
+            "Tipado de funciones y objetos",
+            "Integración con React en TSX",
+            "Uso en proyectos Next.js"
+        ]
+    },
+    {
+        "name": "PHP",
+        "logo": "assets/img/php_logo.png",
+        "links": [
+            {
+                "label": "MizumeBlog",
+                "url": "https://github.com/Mizume25/MizumeBlog"
+            },
+            {
+                "label": "BlogPersonal",
+                "url": "https://github.com/Mizume25/BlogPersonal"
+            }
+        ],
+        "desc": "Lenguaje de programación del lado del servidor. Base del ecosistema Laravel y primer contacto con el desarrollo backend.",
+        "certs": [],
+        "features": [
+            "Peticiones a base de datos",
+            "Generación dinámica de contenido",
+            "Integración con MySQL/MariaDB",
+            "Lógica de servidor básica"
+        ]
+    },
+    {
+        "name": "JavaScript",
+        "logo": "assets/img/js-logo.png",
+        "links": [
+            {
+                "label": "Openwebinars",
+                "url": "https://github.com/Mizume25/Openwebinars"
+            },
+            {
+                "label": "react_project",
+                "url": "https://github.com/Mizume25/react_project"
+            }
+        ],
+        "desc": "Lenguaje base del desarrollo web frontend. Domino manipulación del DOM, promesas, funciones asíncronas, destructuring y trabajo con APIs REST.",
+        "certs": [
+            {
+                "name": "Fundamentos JavaScript",
+                "url": "https://openwebinars.net/cert/jSqh"
+            },
+            {
+                "name": "Manipulacion del DOM",
+                "url": "https://openwebinars.net/cert/ty17"
+            }
+        ],
+        "features": [
+            "Manipulación del DOM",
+            "Promesas y async/await",
+            "Consumo de APIs REST",
+            "Arrow functions y destructuring"
+        ]
+    },
+    {
+        "name": "Maquetacion Web",
+        "logo": "assets/img/maquetacion-web.png",
+        "links": [
+            {
+                "label": "BlogPersonal",
+                "url": "https://github.com/Mizume25/BlogPersonal"
+            },
+            {
+                "label": "MizumeBlog",
+                "url": "https://github.com/Mizume25/MizumeBlog"
+            }
+        ],
+        "desc": "Lenguajes de maquetación y estilos. Responsive nativo con CSS puro sin frameworks, animaciones CSS y diseño estructurado con Flexbox y Grid. No es una parte destacable en mi perfil, aunque tambien implemento muchas veces herramientras y plantillas externas, asi como uso de prompts de para interficies concretas",
+        "certs": [],
+        "features": [
+            "Responsive con CSS puro sin frameworks y con framworks",
+            "Animaciones y transiciones CSS",
+            "Flexbox y CSS Grid"
+        ]
+    },
+    {
+        "name": "MariaDB",
+        "logo": "assets/img/MariaDB-logo.png",
+        "links": [
+            {
+                "label": "gestoriaV2",
+                "url": "https://github.com/Mizume25/gestoriaV2"
+            }
+        ],
+        "desc": "Sistema de gestión de bases de datos relacionales. Diseño de entidades, modelo entidad-relación.",
+        "certs": [],
+        "features": [
+            "Diseño de modelo entidad-relación",
+            "Consultas SQL",
+            "Gestión con PHPMyAdmin",
+            "Integración con Laravel Eloquent"
+        ]
+    },
+    {
+        "name": "PL/SQL Oracle",
+        "logo": "assets/img/oracle-bd.png",
+        "links": [],
+        "desc": "Lenguaje procedural de Oracle para la gestión y manipulación avanzada de bases de datos. Aprendizaje orientado a la lógica de negocio dentro del propio motor de base de datos.",
+        "certs": [],
+        "features": [
+            "Procedimientos almacenados",
+            "Funciones y bloques anónimos",
+            "Bucles y estructuras de control",
+            "Registros y tipos personalizados",
+            "Triggers de base de datos"
+        ]
+    },
+    {
+        "name": "Java",
+        "logo": "assets/img/java.png",
+        "links": [
+            {
+                "label": "ArchivadorJDK",
+                "url": "https://github.com/Mizume25/ArchivadorJDK"
+            }
+        ],
+        "desc": "Primer lenguaje de programación aprendido. Base de la lógica programática, orientación a objetos y fundamentos que se extrapolaron a PHP y TypeScript.",
+        "certs": [
+            {
+                "name": "Instroduccion",
+                "url": "https://openwebinars.net/cert/Pgjm"
+            }
+        ],
+        "features": [
+            "Programación orientada a objetos",
+            "Control de errores",
+            "Interfaces y clases abstractas",
+            "Estructuras de datos básicas"
+        ]
+    }
+]
