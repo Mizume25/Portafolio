@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ════════════════════════════════════════════════════════
    VARIABLES CSS
 ════════════════════════════════════════════════════════ */
@@ -214,6 +218,65 @@ a {
     all: unset;
     cursor: pointer;
 }
+
+/* ════════════════════════════════════════════════════════
+   NAV DE SECCIONES (fijo, lateral derecho)
+════════════════════════════════════════════════════════ */
+.section-nav {
+    position: fixed;
+    top: 1rem;
+    left: calc(1rem + 42px + 0.6rem); /* mismo top que toggle + su ancho + gap */
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    z-index: 999;
+}
+
+.section-nav__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+    height: 42px;
+    border-radius: 21px;
+    background: var(--bg-card);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    max-width: 42px;
+    transition: max-width 0.35s ease-in-out,
+                transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.section-nav__link i {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.section-nav__link span {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+.section-nav__link:hover {
+    max-width: 160px;
+    transform: scale(1.05);
+}
+
+.section-nav__link:hover span {
+    opacity: 1;
+}
+
+.section-nav__link.active {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+
 
 /* ════════════════════════════════════════════════════════
    BOTÓN MODO OSCURO
@@ -1292,6 +1355,21 @@ body.dark .project-status.archivado {
     .section-title::after {
         left: 50%;
         transform: translateX(-50%);
+    }
+
+     .section-nav {
+        left: calc(1rem + 36px + 0.5rem);
+    }
+
+    .section-nav__link {
+        height: 36px;
+        max-width: 36px;
+        border-radius: 18px;
+        font-size: 0.75rem;
+    }
+
+    .section-nav__link i {
+        font-size: 0.85rem;
     }
 }
 

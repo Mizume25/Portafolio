@@ -224,3 +224,21 @@ const sectionObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.3 });
 sectionObserver.observe(projectsSection);
+// Resalta el nav link de la sección visible
+const sections = ['tecnologias', 'proyectos', 'experiencia'];
+const navLinks = document.querySelectorAll('.section-nav__link');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navLinks.forEach(l => l.classList.remove('active'));
+            const active = document.querySelector(`.section-nav__link[data-section="${entry.target.id}"]`);
+            if (active)
+                active.classList.add('active');
+        }
+    });
+}, { threshold: 0.4 });
+sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el)
+        observer.observe(el);
+});
