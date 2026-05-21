@@ -1197,6 +1197,7 @@ body.dark .project-status.archivado {
      .tech-slider {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+         margin: 0 1rem;
         
     }
 
@@ -1208,6 +1209,10 @@ body.dark .project-status.archivado {
         top: -2.5rem;
         right: -3.75rem;
         align-items: flex-end;
+    }
+
+    .tech-link{
+        font-size: 0.765rem;
     }
 
      .projects-slider {
@@ -1323,4 +1328,24 @@ body.dark .project-status.archivado {
         font-size: 0.85rem;
     }
 
+}
+
+/* ─── MÓVIL PEQUEÑO (≤ 400px) ────────────────────────── */
+@media (max-width: 400px) {
+    .tech-slider {
+        margin: 0 1rem;
+        gap: 1rem;
+    }
+
+    .tech-section {
+        padding: 1rem 0;
+    }
+
+    .tech-left {
+        padding: 1.5rem 1rem;
+    }
+
+    .tech-right {
+        padding: 1.5rem 1rem;
+    }
 }
