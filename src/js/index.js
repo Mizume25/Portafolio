@@ -61,7 +61,7 @@ function render() {
         item.techFeatures.innerHTML = tech.features.map(f => `<li>${f}</li>`).join('');
         elements.forEach(el => el.classList.remove('tech-fade'));
         renderDots();
-    }, 200);
+    }, 5000);
 }
 item.techPrev.addEventListener('click', () => goTo(current - 1));
 item.techNext.addEventListener('click', () => goTo(current + 1));
@@ -99,16 +99,28 @@ function renderImgDots() {
         item.projectImgDots.appendChild(dot);
     });
 }
+let pendingImg = null;
 function goToImg(index) {
     const project = projects[currentProject];
     currentImg = (index + project.screenshots.length) % project.screenshots.length;
     item.projectImg.classList.add('fade');
-    setTimeout(() => {
-        item.projectImg.src = project.screenshots[currentImg];
-        item.projectImg.loading = 'lazy';
+    // Cancela la carga anterior si existe
+    if (pendingImg) {
+        pendingImg.onload = null;
+        pendingImg.src = '';
+        pendingImg = null;
+    }
+    const newImg = new Image();
+    pendingImg = newImg;
+    newImg.onload = () => {
+        if (pendingImg !== newImg)
+            return; // ya fue cancelada
+        item.projectImg.src = newImg.src;
         item.projectImg.classList.remove('fade');
+        pendingImg = null;
         renderImgDots();
-    }, 600);
+    };
+    newImg.src = project.screenshots[currentImg];
 }
 function goToProject(index) {
     currentProject = (index + projects.length) % projects.length;
@@ -137,7 +149,7 @@ function renderProject() {
         renderProjectDots();
         renderImgDots();
         startImgAutoplay();
-    }, 200);
+    }, 5000);
 }
 item.projectPrev.addEventListener('click', () => goToProject(currentProject - 1));
 item.projectNext.addEventListener('click', () => goToProject(currentProject + 1));

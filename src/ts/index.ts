@@ -147,17 +147,31 @@ function renderImgDots(): void {
     });
 }
 
+let pendingImg: HTMLImageElement | null = null;
+
 function goToImg(index: number): void {
     const project = projects[currentProject];
     currentImg = (index + project.screenshots.length) % project.screenshots.length;
     item.projectImg.classList.add('fade');
-    
+
+    // Cancela la carga anterior si existe
+    if (pendingImg) {
+        pendingImg.onload = null;
+        pendingImg.src = '';
+        pendingImg = null;
+    }
+
     const newImg = new Image();
+    pendingImg = newImg;
+
     newImg.onload = () => {
+        if (pendingImg !== newImg) return; // ya fue cancelada
         item.projectImg.src = newImg.src;
         item.projectImg.classList.remove('fade');
+        pendingImg = null;
         renderImgDots();
     };
+
     newImg.src = project.screenshots[currentImg];
 }
 
