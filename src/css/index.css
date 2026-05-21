@@ -222,10 +222,10 @@ a {
 /* ════════════════════════════════════════════════════════
    NAV DE SECCIONES (fijo, lateral derecho)
 ════════════════════════════════════════════════════════ */
-.section-nav {
+nav.section-nav {
     position: fixed;
     top: 1rem;
-    left: calc(1rem + 42px + 0.6rem); /* mismo top que toggle + su ancho + gap */
+    left: calc(1rem + 42px + 0.6rem);
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
