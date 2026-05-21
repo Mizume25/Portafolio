@@ -95,7 +95,7 @@ function render(): void {
         elements.forEach(el => el.classList.remove('tech-fade'));
         renderDots();
 
-    }, 200);
+    }, 5000);
 }
 
 item.techPrev.addEventListener('click', () => goTo(current - 1));
@@ -151,12 +151,14 @@ function goToImg(index: number): void {
     const project = projects[currentProject];
     currentImg = (index + project.screenshots.length) % project.screenshots.length;
     item.projectImg.classList.add('fade');
-    setTimeout(() => {
-        item.projectImg.src = project.screenshots[currentImg];
-        item.projectImg.loading = 'lazy';
+    
+    const newImg = new Image();
+    newImg.onload = () => {
+        item.projectImg.src = newImg.src;
         item.projectImg.classList.remove('fade');
         renderImgDots();
-    }, 600);
+    };
+    newImg.src = project.screenshots[currentImg];
 }
 
 function goToProject(index: number): void {
@@ -199,7 +201,7 @@ function renderProject(): void {
         renderProjectDots();
         renderImgDots();
         startImgAutoplay();
-    }, 200);
+    }, 5000);
 }
 
 item.projectPrev.addEventListener('click', () => goToProject(currentProject - 1));
